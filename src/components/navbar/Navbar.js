@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
+import smallLogo from "../../assets/smallLogo.png"
 import Button from "../UI/Button/Button";
 import "../UI/Button/Button.css";
 
@@ -14,11 +15,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <div>
       <nav className="navbar container">
       <div className="logo">
-      <img src={logo} alt="logo" />
+      <picture>
+        <source media="(min-width:600px)" srcset={logo} />
+        <img src={smallLogo} alt="HP"/>
+      </picture>
       </div>
       <menu>
         <ul
@@ -26,6 +31,7 @@ const Navbar = () => {
           id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
         >
           <li>
+          {/* eslint-disable */}
             <a href="#">Kotisivu</a>
           </li>
           <li>

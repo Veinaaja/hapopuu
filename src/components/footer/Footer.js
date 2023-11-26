@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo.png";
+import smallLogo from "../../assets/smallLogo.png"
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -16,22 +17,23 @@ const Footer = () => {
           <h4>Yhteystiedot</h4>
           <div className="footer-contact u-text-small">
             <p>
-              <FaMapMarkerAlt /> &nbsp; Osoite: foo
+              <FaMapMarkerAlt /> &nbsp; Osoite: Petäjävesi
             </p>
             <p>
-              <FaPhoneAlt /> &nbsp; Puhelinnumero: +358 40 6697097.
+              <FaPhoneAlt /> &nbsp; Puhelinnumero: +358 40 6697097
             </p>
             <p>
-              <FaEnvelope /> &nbsp; Sähköposti: hasisviltusmokesweed@gmail.com
+              <FaEnvelope /> &nbsp; Sähköposti: hassinenville02@gmail.com
             </p>
             <p>
-              <FaGlobe /> &nbsp; Website: www.hapopuu.fi
+              <FaGlobe /> &nbsp; Nettisivut: www.hapopuu.fi
             </p>
           </div>
         </div>
-        <div className="footer-box">
-          <img src={logo} alt="logo" />
-        </div>
+        <picture>
+          <source media="(min-width:600px)" srcset={logo} alt="Hapopuu"/>
+          <img src={smallLogo} alt="HP"/>
+        </picture>
       </div>
     </section>
   );
