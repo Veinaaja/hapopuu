@@ -38,8 +38,8 @@ const Header = () => {
     <section id="header">
       <div className="container header">
         <div className="header-right" data-aos="fade-left">
-          {isDesktop && <img src={headerPic} alt="Desktop image" style={imageStyle}/>}
-          {isDesktop && <img src={headerPic2} alt="Mobile image" style={imageStyle}/>}
+          {isDesktop && <img src={headerPic} alt="Desktop" style={imageStyle}/>}
+          {isDesktop && <img src={headerPic2} alt="Mobile" style={imageStyle}/>}
         </div>
         <div className="header-left" data-aos="fade-right">
           <h1>

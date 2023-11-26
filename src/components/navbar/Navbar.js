@@ -3,7 +3,6 @@ import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
 import smallLogo from "../../assets/smallLogo.png"
-import Button from "../UI/Button/Button";
 import "../UI/Button/Button.css";
 
 import "./Navbar.css";
@@ -38,7 +37,7 @@ const Navbar = () => {
             <a href="#features">Ominaisuudet</a>
           </li>
           <li className="nav-btn">
-            <Button text={"Ota lisää selvää"} btnClass={"btn-dark"} href={"#faq"} />
+            <a href="#faq">Lisää tietoa</a>
           </li>
         </ul>
       </menu>

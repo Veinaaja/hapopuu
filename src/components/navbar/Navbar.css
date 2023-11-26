@@ -96,7 +96,7 @@ a.btn-light {
     display: block;
     position: absolute;
     list-style: none;
-    background: #492801;
+    background: linear-gradient(to bottom, #492801, rgb(80, 44, 0));
     left: 0;
     top: 80px;
     width: 100%;
