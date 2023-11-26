@@ -1,6 +1,6 @@
-import {FaBrain, FaGg } from "react-icons/fa";
-import { MdFiberManualRecord } from "react-icons/md";
-import { BsHammer } from "react-icons/bs";
+import {FaBrain } from "react-icons/fa";
+import { BsHammer, BsTree } from "react-icons/bs";
+import { RiGuideFill } from "react-icons/ri";
 
 export const FeatureList = [
   {
@@ -17,13 +17,13 @@ export const FeatureList = [
   },
   {
     id: 3,
-    icon: <FaGg color="#0a1930" size={22} />,
+    icon: <BsTree color="#0a1930" size={22} />,
     heading: "Laadukkaat Materiaalit",
     text: "Yritys käyttää vain korkealaatuisia materiaaleja, jotka kestävät aikaa ja kulutusta. Tämä varmistaa, että huonekalut säilyttävät ulkonäkönsä ja toimivuutensa vuosien varrella.",
   },
   {
     id: 4,
-    icon: <MdFiberManualRecord color="#0a1930" size={22} />,
+    icon: <RiGuideFill color="#0a1930" size={22} />,
     heading: "Huolto-ohjeet ja Neuvonta",
     text: "Asiakkaille tarjotaan selkeät huolto-ohjeet, jotka auttavat heitä ylläpitämään huonekalujen kuntoa pitkällä aikavälillä. Lisäksi yritys voi tarjota neuvontaa huonekalujen asianmukaisesta hoidosta.",
   }

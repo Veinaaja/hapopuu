@@ -6,6 +6,7 @@ import Button from "../UI/Button/Button";
 import "../UI/Button/Button.css";
 
 import "./Navbar.css";
+import Divider from "../Divider";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,7 +15,8 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <nav className="navbar container">
+    <div>
+      <nav className="navbar container">
       <div className="logo">
       <img src={logo} alt="logo" />
       </div>
@@ -42,6 +44,9 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    <Divider />
+    </div>
+    
   );
 };
 
